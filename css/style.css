@@ -32,6 +32,10 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+button {
+  font-family: "Roboto", sans-serif;
+}
 /* Header style */
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -416,6 +420,7 @@ footer {
 .footer-main-container {
   display: flex;
   align-items: baseline;
+  justify-content: center;
 }
 
 .footer-first-container {
@@ -457,6 +462,10 @@ footer {
   gap: 16px;
 }
 
+.footer-text-socials {
+  margin-right: 192px;
+}
+
 .social-icons {
   width: 24px;
   height: 24px;
@@ -485,4 +494,53 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
+
+.footer-form-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.subscribe-form-input::placeholder {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 8px 212px 8px 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.subscribe-form-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.suscribe-form-frame {
+  fill: #ffffff;
 }
