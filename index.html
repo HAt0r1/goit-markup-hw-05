@@ -462,12 +462,14 @@
         <div class="footer-form-container">
           <p class="footer-form-title">Subscribe</p>
           <form name="subscribe-form" class="footer-form" autocomplete="off">
-            <input
-              type="email"
-              class="subscribe-form-input"
-              placeholder="E-mail"
-              id="footer-form-id"
-            />
+            <label for="" class="footer-form-label">
+              <input
+                type="email"
+                class="subscribe-form-input"
+                placeholder="E-mail"
+                id="footer-form-id"
+              />
+            </label>
             <button type="submit" class="subscribe-form-btn">
               Subscribe
               <svg class="suscribe-form-frame" width="24" height="24">
@@ -490,50 +492,59 @@
           Leave your contacts and we will call you back
         </p>
         <form name="callback-form" class="backdrop-form" autocomplete="off">
-          <div class="label-container">
-            <label for="user-name" class="form-user-title">Name</label>
-          </div>
-          <div class="input-container">
-            <input
-              type="text"
-              class="form-input-prop"
-              id="user-name"
-              autofocus
-            />
-            <svg class="form-user-logo" width="18" height="24">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
-          </div>
-
-          <div class="label-container">
-            <label for="user-phone" class="form-user-title">Phone</label>
-          </div>
-          <div class="input-container">
-            <input type="tel" class="form-input-prop" id="user-phone" />
-            <svg class="form-user-logo" width="18" height="24">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
+          <div class="form-container">
+            <label class="form-user-title" for="user-name">Name</label>
+            <div class="input-container">
+              <input
+                class="form-input-prop"
+                type="text"
+                name="user-name"
+                id="user-name"
+                autofocus
+              />
+              <svg class="form-user-logo" width="18" height="24">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="label-container">
-            <label for="user-email" class="form-user-title">Email</label>
-          </div>
-          <div class="input-container">
-            <input type="email" class="form-input-prop" id="user-email" />
-            <svg class="form-user-logo" width="18" height="24">
-              <use href="./images/icons.svg#email"></use>
-            </svg>
+          <div class="form-container">
+            <label class="form-user-title" for="user-phone">Phone</label>
+            <div class="input-container">
+              <input
+                class="form-input-prop"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="form-user-logo" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="label-container">
-            <label for="user-comment" class="form-user-title">Comment</label>
+          <div class="form-container">
+            <label class="form-user-title" for="user-email">Email</label>
+            <div class="input-container">
+              <input
+                class="form-input-prop"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="form-user-logo" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
           </div>
-          <div class="input-container input-margin-container">
+
+          <div class="form-container textarea-container">
+            <label class="form-user-title" for="user-comment">Comment</label>
             <textarea
-              name="form-user-textarea"
-              id="user-comment"
-              rows="6"
               class="form-input-prop-textarea"
+              name="user-comment"
+              rows="6"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -544,7 +555,7 @@
               type="checkbox"
               name="user-privacy"
               value="true"
-              id="form-user-privacy"
+              id="user-privacy"
             />
             <label class="checkbox-text" for="user-privacy">
               <span class="checkbox-icon">
