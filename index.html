@@ -71,7 +71,7 @@
       <!-- Second Section -->
       <section class="info-section">
         <div class="container">
-          <h2 class="visual-hidden">Hello</h2>
+          <h2 class="visually-hidden">Hello</h2>
           <ul class="info-section-list">
             <li class="info-card">
               <div class="icon-container">
@@ -462,12 +462,13 @@
         <div class="footer-form-container">
           <p class="footer-form-title">Subscribe</p>
           <form name="subscribe-form" class="footer-form" autocomplete="off">
-            <label for="" class="footer-form-label">
+            <label for="footer-form-id" class="footer-form-label">
               <input
                 type="email"
                 class="subscribe-form-input"
                 placeholder="E-mail"
                 id="footer-form-id"
+                name="user-email"
               />
             </label>
             <button type="submit" class="subscribe-form-btn">
@@ -538,7 +539,7 @@
             </div>
           </div>
 
-          <div class="form-container textarea-container">
+          <div class="form-container form-margin-container">
             <label class="form-user-title" for="user-comment">Comment</label>
             <textarea
               class="form-input-prop-textarea"
@@ -551,7 +552,7 @@
 
           <div class="checkbox-container">
             <input
-              class="checkbox visual-hidden"
+              class="checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               value="true"
